@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class DayOne {
 
     public static void main(String[] args) {
-    int start = 50;
-    int count = 0;
+        int start = 50;
+        int count = 0;
+
         try {
             Scanner scanner = new Scanner(new File("./src/rotations.txt"));
 
