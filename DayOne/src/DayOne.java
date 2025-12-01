@@ -6,7 +6,8 @@ public class DayOne {
 
     public static void main(String[] args) {
         int start = 50;
-        int count = 0;
+        int countOne = 0;
+        int countTwo = 0;
 
         try {
             Scanner scanner = new Scanner(new File("./src/rotations.txt"));
@@ -32,14 +33,18 @@ public class DayOne {
                         start++;
                         if (start > 99) {
                             start = 0;
-                            count++;
+                            countTwo++;
                             continue;
                         }
                     }
 
                     if (start == 0) {
-                        count++;
+                        countTwo++;
                     }
+                }
+
+                if(start == 0) {
+                    countOne++;
                 }
             }
 
@@ -48,7 +53,8 @@ public class DayOne {
             e.printStackTrace();
         }
 
-        System.out.println(count);
+        System.out.println(countOne);
+        System.out.println(countTwo);
     }
 }
 
